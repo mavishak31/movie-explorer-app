@@ -1,3 +1,8 @@
+Nama: [Ishak Maventha Amrafel WPH-17]
+Repository: [[GitHub repository URL](https://github.com/mavishak31/movie-app-challenge9-mavishak)]
+Deployment: [\[https://movie-app-challenge9-mavishak.vercel.app/\]](https://movie-app-challenge9-mavishak.vercel.app/)
+Notes: [Catatan tambahan jika ada - challenges, learning points, etc.]
+
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/yilVXAsj)
 
 # Challenge 9 - Movie Explorer App
