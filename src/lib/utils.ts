@@ -11,7 +11,7 @@ export function cn(...inputs: ClassValue[]) {
 // Reference: https://developer.themoviedb.org/docs/image-basics
 
 export function getImageUrl(
-  path: string | null,
+  path?: string | null,
   size: string = 'original'
 ): string {
   if (!path) {

@@ -1,6 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
 import { QUERY_KEYS } from '@/lib/constants';
 import { movieService } from '@/services/movieService';
+import api from '@/lib/axios';
 
 // TODO: Create custom hooks using React Query
 // Reference: https://tanstack.com/query/latest/docs/framework/react/overview
@@ -40,5 +41,27 @@ export const useSearchMovies = (query: string) => {
     queryKey: QUERY_KEYS.movies.search(query, 1),
     queryFn: () => movieService.searchMovies(query),
     enabled: !!query,
+  });
+};
+
+// TODO: Add more hooks as needed
+export const useMovieReleaseDates = (id: number) => {
+  return useQuery({
+    queryKey: ['movie-release-dates', id],
+    queryFn: () => movieService.getMovieReleaseDates(id),
+    enabled: !!id,
+  });
+};
+
+// watch trailer
+export const useMovieVideos = (movieId: number) => {
+  return useQuery({
+    queryKey: ['movie-videos', movieId],
+    queryFn: async () => {
+      const response = await api.get(`/movie/${movieId}/videos`);
+
+      return response.data;
+    },
+    enabled: !!movieId,
   });
 };

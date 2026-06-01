@@ -47,4 +47,10 @@ export const movieService = {
   },
 
   // TODO: Add more endpoints as needed
+  // Endpoint: GET /movie/{movie_id}/release_dates
+  async getMovieReleaseDates(id: number) {
+    const { data } = await api.get(`/movie/${id}/release_dates`);
+
+    return data;
+  },
 };
