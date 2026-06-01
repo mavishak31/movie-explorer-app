@@ -1,5 +1,5 @@
 Nama: [Ishak Maventha Amrafel WPH-17]
-Repository: [[GitHub repository URL](https://github.com/mavishak31/movie-app-challenge9-mavishak)]
+Repository: [[GitHub repository URL](https://github.com/WPH-Bootcamp/challenge-9-mavishak31)]
 Deployment: [\[https://movie-app-challenge9-mavishak.vercel.app/\]](https://movie-app-challenge9-mavishak.vercel.app/)
 Notes: [Catatan tambahan jika ada - challenges, learning points, etc.]
 
